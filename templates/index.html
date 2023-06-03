@@ -1,0 +1,429 @@
+﻿{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QuantumSoft Technologies | Home</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/fav_mini.png' %}"/>
+        <link rel="stylesheet" href="{% static 'css/foundation.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+        <style>
+            #video-player {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+        </style>
+
+        
+    </head>
+    
+    <body>
+
+
+        <header>
+
+            <div class="main-header large-12 columns no-padding">
+
+                <div class="global-page-container">
+
+                    <div class="logo small-6 small-offset-3 large-3 large-offset-0 columns no-padding">
+                        <a href="{% url 'home' %}" title="home" style="text-decoration: none;">
+                            <div class="table">
+                                <div class="table-cell">
+                                    <h1> <span class="square">&nbsp;</span>QuantumSoft</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="main-menu show-for-large-up large-9 columns text-right">
+                        <div class="table">
+                            <div class="table-cell">
+                                <ul class="menu-items">
+                                    <li><a href="#about-us" style="text-decoration: none;">Sobre Nós</a></li>
+                                    <li><a href="#servicos" style="text-decoration: none;">Serviços</a></li>
+                                    <li><a href="#contact-us" style="text-decoration: none;">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hamburguer-icon" class="hamburguer-icon small-2 columns text-right">
+                        <div class="table">
+                            <div class="table-cell">
+                                <img src="{% static 'img/menu/hamburguer.svg' %}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-space small-1 columns"></div>
+
+                </div>
+            </div>
+
+            <div id="sliding-header-menu-outer" class="sliding-header-menu-outer">
+                <div class="sliding-header-menu">
+
+                    <div id="sliding-header-menu-close-button" class="sliding-header-menu-close-button small-12 columns">
+                        <div class="table">
+                            <div class="table-cell">
+                                <img class="close-icon" src="{% static 'img/menu/close.svg' %}">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="sliding-header-menu-main-menu small-12 columns">
+
+                        <div class="table">
+                            <div class="table-cell">
+                                <ul class="sliding-header-menu-li">
+                                    <li><a href="#about-us">Sobre Nós</a></li>
+                                    <li><a href="#servicos">Serviços</a></li>
+                                    <li><a href="#contact-us">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="ghost-element">
+        </div>
+
+
+
+
+                 {% bootstrap_messages %}
+        <div class="welcome-gallery small-12 columns">
+
+
+
+            <div class="photo-section small-12 columns">
+                <div class="homepage-main-photo">
+                    <video id="video-player" src="{% static 'video/fundo.mp4' %}" autoplay muted loop></video>
+                </div>
+            </div>
+
+            <div class="main-section-title small-10 columns">
+                <div class="table">
+                    <div class="table-cell">
+                        <h1>Olá, Somos a Quantum Soft Technologies?</h1>
+                        <h2>Como podemos lhe ajudar hoje?</h2>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="photo-gradient">
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="about-us small-12 columns no-padding small-centered inline">
+
+            <div class="global-page-container">
+                <div id="about-us" class="section-title small-12 columns no-padding">
+                    <h3>Sobre Nós</h3>
+                    <hr></hr>
+                </div>
+
+                <div class="tab-box small-12 small-centered large-10 columns no-padding">
+
+                    <div class="box-tabs">
+                        <div style="background-color: #2A2D34; font-weight: bold" class="single-tab">Missão</div>
+                        <div class="single-tab">Visão</div>
+                        <div class="single-tab">Valores</div>
+                    </div>
+
+                    <div id="box-text">
+                        Levar para nossos clientes soluções de tecnologia de alta qualidade que aumentam a eficiência e produtividade dos negócios e contribuam para o sucesso dos negócios.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="servicos inline small-12 columns no-padding small-centered inline">
+
+            <div class="global-page-container">
+                <div id="servicos" class="section-title small-12 columns no-padding">
+                    <h3>Serviços</h3>
+                    <hr></hr>
+                </div>
+            </div>
+
+            <div class="service-stripe small-12 columns no-padding">
+                <div class="global-page-container">
+                    <div class="service-stripe-inner small-12 columns no-padding">
+
+                        <div id="service-previous" class="stripe-arrow small-1 columns no-padding">
+                            <p></p>
+                        </div>
+
+                        <div class="stripe-content small-10 columns no-padding">
+                            <span id="service-title">Quantum Soft Technologies</span><br><p>
+                                A QuantumSoft Technologies é uma empresa que fornece uma variedade de serviços de TI para o mercado. Nossos serviços incluem: 
+                                <br>* Desenvolvimento de Software: Utilizamos a mais recente tecnologia e metodologias ágeis para desenvolver os softwares sob medida para suas necessidades. 
+                                <br>* Consultoria de TI: Oferecemos uma consultoria de TI para empresas de todos os tamanhos para ajudar e auxiliar na identificação de oportunidades de melhoria e desenvolver estratégias para maximizar o potencial de seus sistemas.
+                                <br>* Implementação de sistemas: Oferecemos a e suporte para a  implementação de sistemas de gestão empresarial (ERP) e sistemas de gestão de relacionamento com clientes (CRM). 
+                                <br>* Suporte Técnico: Fornecemos um suporte técnico de sistemas operacionais, software e hardware para garantir o bom funcionamento dos sistemas de informação de sua empresa ou de uso particular. 
+                                <br>* Serviços de segurança: Nós fornecemos opções de implementação de segurança, como gerenciamento de antivírus, prevenção de invasões e backup e restauração de dados. 
+                                <br>* Desenvolvimento de aplicativos móveis: Desenvolvemos  aplicativos móveis personalizados para sua empresa, para uso comercial ou particular. Para que possamos atingir todos os clientes. 
+                            </p>
+                        </div>
+
+                        <div id="service-next" class="stripe-arrow small-1 columns no-padding">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="projetos small-12 large-12 columns no-padding small-centered inline">
+            <div class="global-page-container">
+                <div class="section-title small-12 columns no-padding">
+                    <h3>Projetos</h3>
+                    <hr></hr>
+                </div>
+            </div>
+
+            <div class="global-page-container">
+
+
+                <div class="slider-projetos">
+                    <div id="slider-002" class="slider-002 small-12 small-centered columns">
+
+                        <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                            <div class="projetos-item">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalLead">
+
+                                    <div class="projetos-item-image">
+                                        <video id="video-player" src="{% static 'video/produto1.mp4' %}" autoplay muted loop></video>
+                                    </div>
+
+                                    <div class="item-info">
+                                        <div class="title">Consultoria de T.I.</div>
+                                    </div>
+
+                                    <div class="gradient-filter">
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                            <div class="projetos-item">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalLead">
+
+                                    <div class="projetos-item-image">
+                                        <video id="video-player" src="{% static 'video/produto2.mp4' %}" autoplay muted loop></video>
+                                    </div>
+
+                                    <div class="item-info">
+                                        <div class="title">Criação de Websites</div>
+                                    </div>
+
+                                    <div class="gradient-filter">
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                            <div class="projetos-item">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalLead">
+
+                                    <div class="projetos-item-image">
+                                        <video id="video-player" src="{% static 'video/produto3.mp4' %}" autoplay muted loop></video>
+                                    </div>
+
+                                    <div class="item-info">
+                                        <div class="title">Serviços de Segurança</div>
+                                    </div>
+
+                                    <div class="gradient-filter">
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-us" class="contact-us small-12 columns no-padding inline">
+
+            <div class="global-page-container">
+                <div class="section-title small-12 columns no-padding">
+                    <h3>Contato</h3>
+                    <hr></hr>
+                </div>
+
+
+                <div class="contact-form small-12 medium-10 large-6 columns no-padding small-centered">
+
+                    <form method="post" id="email_form">
+                        {% csrf_token %}<input type="hidden" name="form_type" value="form1">
+                        <input type="text" id="id_assunto" name="assunto" placeholder="Assunto" />
+                        <input type="text" id="id_nome" name="nome"
+                               placeholder="Nome" />
+                        <input type="text" id="id_email" name="email"
+                               placeholder="E-mail" />
+                        <textarea id="id_mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+
+                        <input id="submit_form" type="submit" value="Enviar" />
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <footer id="footer" class="small-12 columns no-padding">
+
+            <div class="global-page-container">
+
+                <div class="small-11 small-centered large-12 columns footer-section inline">
+
+                    <div class="follow-us small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                        <h4 class="footer-section-title">Siga-nos</h4>
+                        <a href="http://www.facebook.com"><img src="{% static 'img/social-icons/facebook.svg' %}" alt="facebook-icon"></a>
+                        <a href="http://www.twitter.com"><img src="{% static 'img/social-icons/twitter.svg' %}" alt="facebook-icon"></a>
+                        <a href="http://www.instagram.com"><img src="{% static 'img/social-icons/instagram.svg' %}" alt="facebook-icon"></a>
+                    </div>
+
+                    <div class="contato small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                        <h4 class="footer-section-title">Contato</h4>
+                        <p>
+                            Rua Maria, 500<br>
+                            São Paulo/SP<br>
+                            Telefone. (11)9 9999-9999<br>
+                            contato@quantumsoft.com
+                        </p>
+                    </div>
+
+                    <div class="horario small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                        <h4 class="footer-section-title">Horários</h4>
+                        <p>
+                            Seg-Sex: 09h30 - 20h00<br>
+                            Sábado 11h30 - 17h00<br>
+                            Domingo 11h30 - 14h00
+                        </p>
+                    </div>
+
+                    <div class="como-chegar small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                        <h4 class="footer-section-title">Como chegar</h4>
+                        <div id="map"></div>
+
+                        <script>
+                            // Initialize and add the map
+                            function initMap() {
+                                // The location of Uluru
+                                var uluru = { lat: -23.567687, lng: -46.648094 };
+                                // The map, centered at Uluru
+                                var map = new google.maps.Map(
+                                    document.getElementById('map'), { zoom: 16, center: uluru });
+                                // The marker, positioned at Uluru
+                                var marker = new google.maps.Marker({ position: uluru, map: map });
+                            }
+                        </script>
+                        <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMD-clZ1JUApCv7BN6JH3b6RN2hd62hz8&callback=initMap">
+                        </script>
+                    </div>
+
+                    <hr></hr>
+
+                    <div class="copyright small-12 columns">
+
+                        <span id="current_year"></span> &copy; Todos os direitos reservados
+
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+        <div class="modal fade" id="modalLead" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Interesse</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                    <form method="post">
+                  <div class="modal-body">
+                        {% csrf_token %}<input type="hidden" name="form_type" value="form2">
+                        <input type="text" id="id_nome" name="nome"
+                               placeholder="Nome" />
+                        <input type="text" id="id_email" name="email"
+                               placeholder="E-mail" />
+                        <input type="text" id="id_telefone" name="telefone"
+                               placeholder="Telefone" />
+
+                    </div>
+                  <div class="modal-footer">
+                    {% buttons %}
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    {% endbuttons %}
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                    </form>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'js/vendor/jquery.js' %}"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <script src="{% static 'js/vendor/foundation.min.js' %}"></script>
+
+        <script>
+            $(document).foundation();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+
+</html>
